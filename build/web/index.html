@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Conta Bancária</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>
+            <h1 style="text-align:center;"> Abra sua conta</h1>
+            <form action="geral" method="POST">
+                <h1 style="text-align:center;"> Conta:
+                <input type="hidden" name="op" value="1" required="" />
+                <input type="text" name="conta" value="" required=""/>
+              
+                CPF:
+            
+                <input type="text" name="cpf" value="" />
+                <input type="submit" value="Cadastrar" style= "color:white; background-color:red;" />
+            </form>
+            <hr>
+            <h1 style="text-align:center;"> Fazer transação</h1>
+            <form action="geral" method="POST">
+                  <h1 style="text-align:center;"> Conta:
+                <input type="hidden" name="op" value="2" />
+                <input type="text" name="conta" value="" />
+                 <h1 style="text-align:center;"> CPF:
+                <input type="text" name="cpf" value="" />
+                  <h1 style="text-align:center;"> Valor:
+                <input type="text" name="valor" value="" />
+                <input type="submit" value="Enviar" style= "color:white; background-color:red;"/>
+            </form>
+           <hr>
+           <h1 style="text-align:center;"> Visualizar histórico</h1>
+            <form action="geral" method="POST">
+                <h1 style="text-align:center;"> Conta:
+                <input type="hidden" name="op" value="3" />
+                <input type="text" name="conta" value="" />
+                <input type="submit" value="Consultar" style= "color:white; background-color:red;">
+            </form>
+            
+        </div>
+    </body>
+</html>
