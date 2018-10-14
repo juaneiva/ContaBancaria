@@ -1,2 +1,2 @@
-# banco
-sistema de banco para aprendizado 
+# Conta
+CONTA BANCÁRIA!
